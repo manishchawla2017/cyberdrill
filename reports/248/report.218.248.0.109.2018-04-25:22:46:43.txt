@@ -1,0 +1,35 @@
+Centre/Unit Name: 248
+Host: 218.248.0.109
+1. Port 80 and 443 are only open on the web server:
+Ports identified on the host:
+
+2. Website is operational over http only: yes
+
+3. Website is operational over https only: Yes
+
+4. Is existing live Website audited by CERT-In authorized empanelled security auditor? 
+Please check with the Centre/Unit.
+
+5. Header: Webserver version display is disabled: No, Server: Microsoft-IIS/8.5
+
+6. Header: PHP/CMS/Other software version display is disabled: 
+
+7. Header: E-tag is disabled: No, ETag: "effd4165436ad11:0"
+
+8. Header: X-XSS-Protection is enabled: No
+
+9. Header: X-Frame-Options is enabled: No
+
+10. Header: Strict-Transport-Security is enabled: 
+No
+
+11. Header: Content-Security-Policy is enabled: 
+No
+
+12. Header: Cookies is set as HttpOnly and Secure: 
+No
+
+13. HTTP Methods like PUT, TRACE, DELETE, OPTION, TRACE are disabled, unless needed: 
+
+14. Remote Login of CMS or Site Management or Tomcat Manager is not accessible over Internet: 
+Use tools like dirb or perform manual testing

@@ -1,0 +1,148 @@
+#Author Manish
+#Date:31st March 2018
+
+How to do a port Scan on Local Network
+Suppose you are on network 10.10.12.0/24 and you want to know 
+all the ports opened in your network, so that you can identify issues
+
+Network Watch  Phase 1
+
+	Step 1: Go to Folder /root/drill/nWatch
+	Step 2: Run a Script "python nwatch.py"
+	Step 3: Select the Required Interface (Except localhost)
+	Step 4: It will scan all ports in the network 
+	Step 5: Very Useful for Identifying Open Ports
+
+
+Nmap Based Scan
+
+	Step 1: Go to Path /root/drill/
+	Step 2: Run a script 
+		nmap.sh <url> <port> > filename.log
+		for example
+                nmap.sh www.isro.gov.in 443 > nmap.isro.gov.in.log        
+
+VenomScan
+
+	Step 1: Go to path /root/drill/V3n0M-Scanner/src
+	Step 2: Run python3.6 v3n0m.py
+	Step 3: Follow On-screen observations
+
+Pythem
+	Step 1: Open terminal and type pythem  ( All libraries and python scripts are already Loaded in VM)
+	Step 2: Follow On-screen Instructions
+
+SSL Verification Phase-1
+
+	Step 1: If  you are having a website which runs on https
+	please use testssl for verifying the security implementation 
+
+	Step 2: Go to folder testssl in the path /root/drill/testssl
+
+	Step 3: You will find a script called testssl.sh 
+
+	Step 4: Script will only run in bash shell, make sure you are in bash shell
+
+	Step 5: To execute the script run ./testssl.sh <host>:<port> 
+	for example ./testssl.sh www.isro.gov.in:443 
+
+	Step 6: You can log the information in json or plain text 
+	with following syntax
+	For log file
+	./testssl.sh  -oL /tmp/logfile.txt www.isro.gov.in:443
+	For json file
+	./testssl.sh  -oJ /tmp/logfile.json  www.isro.gov.in:443
+
+
+SSL Verification Phase-2
+
+	Step 1: Go  to path /root/drill/a2sv 
+	Step 2: Run a python Program 
+	python a2sv.py -t www.isro.gov.in -p 443 -o /tmp/a2sv.txt 
+
+
+Shodan verification 
+
+	1. Go to path /root/drill/shodan-python/bin
+	2. ./shodan init <apikey>
+	3. To get your api key 
+	     a) create account in shodan.io 
+	     b) On the top right corner in shodan website, you will find show API key
+
+	4. The syntax would be like thsi
+
+     	./shodan init apWamFsl3WDK4unEBaaOIOy9XQcFSrKY
+
+	5  You will see message like this
+		"Successfully initialized"
+
+	6. To verify use command 
+		./shodan info 
+
+	7. It will show result like this
+		root@kali:~/drill/shodan-python/bin# ./shodan info
+		Query credits available: 10000
+		Scan credits available: 5118
+
+
+	8. TO scan 
+		root@kali:~/drill/shodan-python/bin# ./shodan scan submit  103.230.165.1
+
+	9. You can perform other actions as per command belows
+	Commands:
+	  alert       Manage the network alerts for your account
+	  convert     Convert the given input data file into a...
+	  count       Returns the number of results for a search
+	  data        Bulk data access to Shodan
+	  download    Download search results and save them in a...
+	  honeyscore  Check whether the IP is a honeypot or not.
+	  host        View all available information for an IP...
+	  info        Shows general information about your account
+	  init        Initialize the Shodan command-line
+	  myip        Print your external IP address
+	  parse       Extract information out of compressed JSON...
+	  radar       Real-Time Map of some results as Shodan finds...
+	  scan        Scan an IP/ netblock using Shodan.
+	  search      Search the Shodan database
+	  stats       Provide summary information about a search...
+	  stream      Stream data in real-time.
+
+
+Domain Verification and issue identification
+
+	Step 1: Go to path /root/drill/domain_analyzer
+	Step 2: Run a program 
+		python domain_analyzer.py -d isro.gov.in
+
+
+
+SecurityHeaders Check
+	Step 1: Go to folder /root/drill/secheaders
+	Step 2: Run a program
+		python secheaders.py <url> > secheaders.log
+
+
+Nikto Scan
+	Step 1: Go to path /root/drill/nikto/program
+	Step 2: Run ./nikto.pl -host <url> -port <portno>
+		For example ./nikto.pl -host www.isro.gov.in -port 443
+		
+SSLyze Scan
+	Step 1: Open Terminal
+	Step 2: Type "sslyze --regular url:port
+		for example sslyze --regular isro.gov.in:443
+
+
+W3af console
+	Step 1: Go to path /root/drill/w3af/
+	Step 2: Either open GUI using ./w3af_gui or console ./w3af_console
+	Step 3: Follow the onscreen instructions
+
+
+SkipFish
+        Step 1: Go to Path /root/drill
+	Step 2: Execute the script
+		./Skipfish.sh https://www.isro.gov.in 443
+	Step 3: Replace the domain name with your own domain
+
+

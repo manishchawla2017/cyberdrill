@@ -1,0 +1,4 @@
+http://feast.vssc.gov.in//Documentation.php/ index.php/component/content/?id=25&Itemid=279
+http://feast.vssc.gov.in//KnownIssues.php/ index.php/component/content/?id=25&Itemid=279
+http://feast.vssc.gov.in//NewCapabilities.php/ index.php/component/content/?id=25&Itemid=279
+http://feast.vssc.gov.in//PlatformSupport.php/ index.php/component/content/?id=25&Itemid=279

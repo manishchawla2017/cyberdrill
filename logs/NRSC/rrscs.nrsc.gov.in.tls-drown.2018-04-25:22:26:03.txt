@@ -1,0 +1,10 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-25 22:26 EDT
+Nmap scan report for rrscs.nrsc.gov.in (14.139.158.197)
+Host is up (0.0030s latency).
+
+PORT    STATE SERVICE
+443/tcp open  https
+|_sslv2-drown: 
+
+Nmap done: 1 IP address (1 host up) scanned in 0.57 seconds

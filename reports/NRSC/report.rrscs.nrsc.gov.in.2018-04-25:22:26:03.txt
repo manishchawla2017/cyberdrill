@@ -1,0 +1,88 @@
+Centre/Unit Name: NRSC
+Host: rrscs.nrsc.gov.in
+1. Port 80 and 443 are only open on the web server:
+Ports identified on the host:
+80/tcp    open     http
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+443/tcp   open     https
+445/tcp   filtered microsoft-ds
+3306/tcp  open     mysql
+3389/tcp  open     ms-wbt-server
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49156/tcp open     unknown
+
+2. Website is operational over http only: No
+
+3. Website is operational over https only: No
+
+4. Is existing live Website audited by CERT-In authorized empanelled security auditor? 
+Please check with the Centre/Unit.
+
+5. Header: Webserver version display is disabled: Yes
+
+6. Header: PHP/CMS/Other software version display is disabled: 
+
+7. Header: E-tag is disabled: Yes
+
+8. Header: X-XSS-Protection is enabled: No
+
+9. Header: X-Frame-Options is enabled: No
+
+10. Header: Strict-Transport-Security is enabled: 
+No
+
+11. Header: Content-Security-Policy is enabled: 
+No
+
+12. Header: Cookies is set as HttpOnly and Secure: 
+No
+
+13. HTTP Methods like PUT, TRACE, DELETE, OPTION, TRACE are disabled, unless needed: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+
+14. Remote Login of CMS or Site Management or Tomcat Manager is not accessible over Internet: 
+Use tools like dirb or perform manual testing
+
+15. TLSv 1.0, SSLv2, SSLv3 support is disabled: 
+No, |   TLSv1.0: 
+
+16. Weak Cipher support over secure communication is disabled: 
+least strength: C
+
+17. Web server is protected from POODLE attack: 
+Yes
+
+18. Web server is protected from Logjam attack: 
+Yes
+
+19. Web server is protected from Heartbleed attack: 
+Yes
+
+20. Web server is protected from CRIME attack: 
+Yes
+
+21. Web server is protected from CCS Injection Vulnerability: 
+Yes
+
+22. Web server is protected from Anonymous Cipher Vulnerability: 
+Yes
+
+23. Web server is protected from Openssl FREAK Vulnerability: 
+Yes
+
+24. Web server is protected from SSL2 DROWN Vulnerability: 
+Yes
+
+25. Webserver supports Forwarding Secrecy over SSL: 
+Yes 
+
+26. DNS CAA is setup on DNS: 
+No, CAA record not present in host
+No, CAA record not present in domain
+
+27. Web server blocked the HTTP/1.0 response: 
+Yes

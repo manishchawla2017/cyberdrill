@@ -1,0 +1,16 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-20 01:19 EDT
+Nmap scan report for school.vssc.gov.in (203.200.153.5)
+Host is up (0.058s latency).
+Other addresses for school.vssc.gov.in (not scanned): 210.212.239.227
+rDNS record for 203.200.153.5: mx1.vssc.gov.in
+Not shown: 65531 filtered ports
+PORT     STATE SERVICE  VERSION
+25/tcp   open  smtp     Barracuda Networks Spam Firewall smtpd
+80/tcp   open  http     nginx
+443/tcp  open  ssl/http nginx
+8080/tcp open  http     nginx
+Service Info: Host: barracuda.vssc.gov.in; CPE: cpe:/h:barracudanetworks:spam_%26_virus_firewall_600:-
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 167.21 seconds

@@ -1,0 +1,10 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-25 22:46 EDT
+Illegal character(s) in hostname -- replacing with '*'
+Stats: 0:00:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 1.00% done; ETC: 22:51 (0:04:57 remaining)
+Nmap scan report for static.ill.218.248.0.109*24.bsnl.in (218.248.0.109)
+Host is up.
+All 1000 scanned ports on static.ill.218.248.0.109*24.bsnl.in (218.248.0.109) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 201.44 seconds

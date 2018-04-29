@@ -1,0 +1,95 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-20 01:19 EDT
+Nmap scan report for 14.139.158.197
+Host is up (0.0026s latency).
+Not shown: 65513 closed ports
+PORT      STATE    SERVICE       VERSION
+80/tcp    open     http          Apache httpd 2.4.18 ((Win32) OpenSSL/1.0.2e PHP/7.0.8)
+135/tcp   filtered msrpc
+137/tcp   filtered netbios-ns
+138/tcp   filtered netbios-dgm
+139/tcp   filtered netbios-ssn
+443/tcp   open     ssl/http      Apache httpd 2.4.18 ((Win32) OpenSSL/1.0.2e PHP/7.0.8)
+445/tcp   filtered microsoft-ds
+831/tcp   filtered netconf-beep
+3306/tcp  open     mysql         MySQL (unauthorized)
+3307/tcp  open     mysql         MySQL (unauthorized)
+3389/tcp  open     tcpwrapped
+4786/tcp  filtered smart-install
+5432/tcp  open     postgresql    PostgreSQL DB 9.6.2
+8080/tcp  open     http-proxy
+47001/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open     msrpc         Microsoft Windows RPC
+49153/tcp open     msrpc         Microsoft Windows RPC
+49154/tcp open     msrpc         Microsoft Windows RPC
+49155/tcp open     msrpc         Microsoft Windows RPC
+49156/tcp open     msrpc         Microsoft Windows RPC
+49162/tcp open     msrpc         Microsoft Windows RPC
+62122/tcp open     ssl/unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.60%I=7%D=4/20%Time=5AD97878%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,195,"HTTP/1\.1\x20404\x20\r\nX-Content-Type-Options:\x20nosnif
+SF:f\r\nX-XSS-Protection:\x201;\x20mode=block\r\nCache-Control:\x20no-cach
+SF:e,\x20no-store,\x20max-age=0,\x20must-revalidate\r\nPragma:\x20no-cache
+SF:\r\nExpires:\x200\r\nX-Frame-Options:\x20DENY\r\nContent-Type:\x20appli
+SF:cation/json;charset=UTF-8\r\nDate:\x20Fri,\x2020\x20Apr\x202018\x2005:2
+SF:1:58\x20GMT\r\nConnection:\x20close\r\n\r\n{\"timestamp\":1524201718158
+SF:,\"status\":404,\"error\":\"Not\x20Found\",\"message\":\"No\x20message\
+SF:x20available\",\"path\":\"/\"}")%r(HTTPOptions,195,"HTTP/1\.1\x20404\x2
+SF:0\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20m
+SF:ode=block\r\nCache-Control:\x20no-cache,\x20no-store,\x20max-age=0,\x20
+SF:must-revalidate\r\nPragma:\x20no-cache\r\nExpires:\x200\r\nX-Frame-Opti
+SF:ons:\x20DENY\r\nContent-Type:\x20application/json;charset=UTF-8\r\nDate
+SF::\x20Fri,\x2020\x20Apr\x202018\x2005:21:58\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\n{\"timestamp\":1524201718173,\"status\":404,\"error\":\"Not\x
+SF:20Found\",\"message\":\"No\x20message\x20available\",\"path\":\"/\"}")%
+SF:r(RTSPRequest,49,"HTTP/1\.1\x20400\x20\r\nDate:\x20Fri,\x2020\x20Apr\x2
+SF:02018\x2005:21:58\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(FourOhFour
+SF:Request,1B8,"HTTP/1\.1\x20404\x20\r\nX-Content-Type-Options:\x20nosniff
+SF:\r\nX-XSS-Protection:\x201;\x20mode=block\r\nCache-Control:\x20no-cache
+SF:,\x20no-store,\x20max-age=0,\x20must-revalidate\r\nPragma:\x20no-cache\
+SF:r\nExpires:\x200\r\nX-Frame-Options:\x20DENY\r\nContent-Type:\x20applic
+SF:ation/json;charset=UTF-8\r\nDate:\x20Fri,\x2020\x20Apr\x202018\x2005:21
+SF::58\x20GMT\r\nConnection:\x20close\r\n\r\n{\"timestamp\":1524201718204,
+SF:\"status\":404,\"error\":\"Not\x20Found\",\"message\":\"No\x20message\x
+SF:20available\",\"path\":\"/nice%20ports%2C/Tri%6Eity\.txt%2ebak\"}")%r(S
+SF:ocks5,49,"HTTP/1\.1\x20400\x20\r\nDate:\x20Fri,\x2020\x20Apr\x202018\x2
+SF:005:21:58\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(Socks4,49,"HTTP/1\
+SF:.1\x20400\x20\r\nDate:\x20Fri,\x2020\x20Apr\x202018\x2005:21:58\x20GMT\
+SF:r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port62122-TCP:V=7.60%T=SSL%I=7%D=4/20%Time=5AD9788A%P=x86_64-pc-linux-g
+SF:nu%r(NULL,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0\.0\.0<
+SF:/version><buffersize>64000</buffersize></init>\n\0")%r(GenericLines,5D,
+SF:"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</version><buf
+SF:fersize>64000</buffersize></init>\n\0")%r(GetRequest,5D,"<\?xml\x20vers
+SF:ion=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</version><buffersize>64000</
+SF:buffersize></init>\n\0")%r(HTTPOptions,5D,"<\?xml\x20version=\"1\.0\"\?
+SF:>\n<init><version>2\.0\.0\.0</version><buffersize>64000</buffersize></i
+SF:nit>\n\0")%r(RTSPRequest,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><vers
+SF:ion>2\.0\.0\.0</version><buffersize>64000</buffersize></init>\n\0")%r(R
+SF:PCCheck,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</v
+SF:ersion><buffersize>64000</buffersize></init>\n\0")%r(DNSVersionBindReq,
+SF:5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</version><
+SF:buffersize>64000</buffersize></init>\n\0")%r(DNSStatusRequest,5D,"<\?xm
+SF:l\x20version=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</version><buffersiz
+SF:e>64000</buffersize></init>\n\0")%r(Help,5D,"<\?xml\x20version=\"1\.0\"
+SF:\?>\n<init><version>2\.0\.0\.0</version><buffersize>64000</buffersize><
+SF:/init>\n\0")%r(SSLSessionReq,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><
+SF:version>2\.0\.0\.0</version><buffersize>64000</buffersize></init>\n\0")
+SF:%r(TLSSessionReq,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0
+SF:\.0\.0</version><buffersize>64000</buffersize></init>\n\0")%r(Kerberos,
+SF:5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</version><
+SF:buffersize>64000</buffersize></init>\n\0")%r(SMBProgNeg,5D,"<\?xml\x20v
+SF:ersion=\"1\.0\"\?>\n<init><version>2\.0\.0\.0</version><buffersize>6400
+SF:0</buffersize></init>\n\0")%r(X11Probe,5D,"<\?xml\x20version=\"1\.0\"\?
+SF:>\n<init><version>2\.0\.0\.0</version><buffersize>64000</buffersize></i
+SF:nit>\n\0")%r(FourOhFourRequest,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init
+SF:><version>2\.0\.0\.0</version><buffersize>64000</buffersize></init>\n\0
+SF:")%r(LPDString,5D,"<\?xml\x20version=\"1\.0\"\?>\n<init><version>2\.0\.
+SF:0\.0</version><buffersize>64000</buffersize></init>\n\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 91.49 seconds

@@ -1,0 +1,12 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-20 01:19 EDT
+Illegal character(s) in hostname -- replacing with '*'
+Nmap scan report for static.ill.218.248.0.109*24.bsnl.in (218.248.0.109)
+Host is up (0.038s latency).
+Not shown: 65534 filtered ports
+PORT     STATE SERVICE VERSION
+1895/tcp open  http    Microsoft IIS httpd 8.5
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2588.11 seconds

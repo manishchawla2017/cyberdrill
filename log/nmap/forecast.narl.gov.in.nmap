@@ -1,0 +1,31 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-04-20 01:19 EDT
+Nmap scan report for forecast.narl.gov.in (115.249.171.20)
+Host is up (0.059s latency).
+rDNS record for 115.249.171.20: weather.narl.gov.in
+Not shown: 65514 filtered ports
+PORT      STATE  SERVICE        VERSION
+21/tcp    open   ftp            vsftpd 2.0.8 or later
+22/tcp    open   ssh            OpenSSH 5.3 (protocol 2.0)
+47/tcp    closed ni-ftp
+50/tcp    closed re-mail-ck
+51/tcp    closed la-maint
+80/tcp    open   http           Apache httpd 2.2.15 ((CentOS))
+443/tcp   closed https
+476/tcp   closed tn-tl-fd1
+477/tcp   closed ss7ns
+989/tcp   closed ftps-data
+990/tcp   closed ftps
+1701/tcp  closed l2f
+1723/tcp  closed pptp
+2401/tcp  closed cvspserver
+3389/tcp  closed ms-wbt-server
+3690/tcp  closed svn
+4081/tcp  open   ssl/http       Kerio MailServer http config
+4090/tcp  open   ssl/omasgport?
+7123/tcp  closed unknown
+7512/tcp  closed unknown
+27153/tcp closed unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 163.23 seconds
